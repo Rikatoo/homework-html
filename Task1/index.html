@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+
+<body>
+    <h1>Add Employee</h1>
+    <form action="" method="POST">
+        <label for="">First name:</label>
+        <input type="text"> </br>
+        <label for="">Last name:</label>
+        <input type="text"> </br>
+        <label for="">Title:</label>
+        <input type="text"> </br>
+        <label for="">Title of Courtesy:</label>
+        <input type="radio" name="kek" value="dr"> Dr. </input>
+        <input type="radio" name="kek" value="mr"> Mr. </input>
+        <input type="radio" name="kek" value="mrs"> Mrs. </input>
+        <input type="radio" name="kek" value="ms"> Ms. </input>
+        </br>
+        <label for="">Birth date:</label>
+        <script>
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            document.write("<select name='bdayM'>")
+            for (var index=0; index < months.length; index++) {
+                document.write("<option value='"+ months[index] + "'>" + months[index] + "</option>");
+            }
+            document.write("</select>");
+            document.write("<select name='bdayD'>")
+            for (var index=1; index <= 31; index++) {
+                document.write("<option value='"+ index + "'>" + index + "</option>");
+            }
+            document.write("</select>");
+            document.write("<select name='bdayY'>")
+            for (var index=1900; index <= 2000; index++) {
+                document.write("<option value='"+ index + "'>" + index + "</option>");
+            }
+            document.write("</select>");
+            </script> </br>
+            <label for="">Hire date:</label>
+        <script>
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            document.write("<select name='hireM'>")
+            for (var index=0; index < months.length; index++) {
+                document.write("<option value='"+ months[index] + "'>" + months[index] + "</option>");
+            }
+            document.write("</select>");
+            document.write("<select name='hireD'>")
+            for (var index=1; index <= 31; index++) {
+                document.write("<option value='"+ index + "'>" + index + "</option>");
+            }
+            document.write("</select>");
+            document.write("<select name='hireY'>")
+            for (var index=2000; index <= 2017; index++) {
+                document.write("<option value='"+ index + "'>" + index + "</option>");
+            }
+            document.write("</select>");
+            </script></br>
+        <label for="">Address:</label>
+        <input type="text"> </br>
+        <label for="">City:</label>
+        <input type="text"> </br>
+        <label for="">Region:</label>
+        <input type="text"> </br>
+        <label for="">Postal Code:</label>
+        <input type="text"> </br>
+        <label for="">Country:</label>
+        <input type="text"> </br>
+        <label for="">Home Phone:</label>
+        <input type="text"> </br>
+        <label for="">Extension:</label>
+        <input type="text"> </br>
+        <label for="">Notes:</label> </br>
+        <textarea name="" id="" cols="50" rows="5"></textarea> </br>
+        <label for="">Manager:</label>
+        <select name="manager">
+            <option value="">David Stoqnov</option>
+            <option value="">Fotis Georgiev</option>
+        </select> </br>
+        <label for="">Password:</label>
+        <input type="password"> </br>
+        <label for="">Repeat Password:</label>
+        <input type="password"> </br>
+        <input type="submit" value="Add Employee"></input>
+    </form>
+</body>
+
+</html>
